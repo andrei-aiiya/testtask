@@ -1,6 +1,6 @@
-const cronService = require('./services/cron_service');
-const db = require('./database');
 const app = require('./network');
+const db = require('./database');
+const cronService = require('./services/cron_service');
 const logger = require('./services/logger_service');
 
 const log = logger.getLogger('main');

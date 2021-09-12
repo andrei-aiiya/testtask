@@ -1,12 +1,12 @@
 {
   "name": "testtask",
   "version": "1.0.0",
-  "description": "Test task from Andrei Kukareko",
+  "description": "Test task from Andrei",
   "main": "src/index.js",
   "scripts": {
     "start": "node src/index.js"
   },
-  "author": "Andrei Kukareko",
+  "author": "Andrei",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.21.4",

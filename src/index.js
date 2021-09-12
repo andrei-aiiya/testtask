@@ -7,7 +7,7 @@ const log = logger.getLogger('main');
 
 const init = async () => {
   db.sequelize.sync({ force: true }).then(() => {
-    console.log('Drop and re-sync db');
+    log.info('Drop and re-sync db');
   });
   cronService.start();
 };

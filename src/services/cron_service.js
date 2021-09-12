@@ -14,4 +14,3 @@ const job = new CronJob(
   true,
 );
 module.exports = job;
-// job.start();

@@ -41,11 +41,12 @@ class ApiService {
         return obj;
       }, {});
   }
-  _castAttributes(value){
-    return attributes.reduce((obj,key)=>{
+
+  _castAttributes(value) {
+    return attributes.reduce((obj, key) => {
       obj[key] = value[key];
       return obj;
-    },{})
+    }, {});
   }
 }
 

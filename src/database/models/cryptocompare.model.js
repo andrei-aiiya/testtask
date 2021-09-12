@@ -21,7 +21,7 @@ module.exports = (sequelize, Sequelize) => {
   });
   CryptoCompare.getLastData = function () {
     return this.findOne({
-      attributes: ['created_at','data'],
+      attributes: ['created_at', 'data'],
       order: [['created_at', 'DESC']],
       raw: true,
     });

@@ -6,13 +6,13 @@ const logger = require('./services/logger_service');
 const log = logger.getLogger('main');
 
 const init = async () => {
-  db.sequelize.sync({ force: true }).then(() => {
-    log.info('Drop and re-sync db');
-  });
-  cronService.start();
+  await db.sequelize.sync({ force: true });
+  log.info('Drop and re-sync db');
+  await cronService.start();
+  log.info('Cron service started');
 };
 init()
-  .then(() => { log.info('Service started');})
+  .then(() => { log.info('Main service started');})
   .catch((e) => {
     log.fatal(e);
     process.exit(1);
